@@ -10,7 +10,7 @@ The quiz is timed and has a score system.
 
 ## Contributors: 
 
-Jamel James (https://www.github.com/jrj-sys)
+Jamel James → (https://www.github.com/jrj-sys)
 
 ## Made With: 
 
