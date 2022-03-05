@@ -1,0 +1,63 @@
+/* importing font family */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #48bf91;
+}
+
+/* Welcome Message & Start Button Styling */
+.start-btn-info, .start-info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 26px;
+    text-align: center;
+    background-color: darkcyan;
+    border: solid 3px;
+    border-radius: 10%;
+}
+.start-btn button {
+    font-size: 26px;
+    border-radius: 5%;
+    padding: 15px 20px;
+    cursor: pointer;
+}
+.start-info {
+    width: 600px;
+}
+.start-header {
+    border-bottom: solid 3px;
+}
+.start-info button {
+    height: 50px;
+    align-items: center;
+    margin-left: 500px;
+}
+.info-list {
+    font-size: 22px;
+    margin: 25px 0;
+    list-style: none;
+}
+.info-list span {
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
