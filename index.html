@@ -11,72 +11,84 @@
     <title>Timed Coding Quiz | (jrj-sys)</title>
 </head>
 <body>
-    <main>
-        <!-- Start button -->
-        <div class="start-btn-info">
-            <h1>Welcome, quizzer!</h1>
-            <div class="start-btn"><button>Press Here To Start</button></div>
+    <!-- Start button -->
+    <div class="start-btn-text">
+        <h1>Welcome, quizzer!</h1>
+        <div class="start-btn"><button>Press Here To Start</button></div>
+    </div>
+    
+    <!-- Info Box -->
+    <div class="info-box">
+        <div class="info-title">
+            <span>Rules & Info</span>
         </div>
+        <div class="info-list">
+            <div class="info">→ You will have <span>20 seconds</span> per question ←</div>
+            <div class="info">→ Each correct answer will prompt the next question and add to your score ←</div>
+            <div class="info">→ Each incorrect answer will prompt the next question and subtract time ←</div>
+            <div class="info">→ Question topics range from HTML Syntax to Third-Party APIs ←</div></br>
+            <div class="info">  Goodluck!</div>
+        </div>
+        <div class="buttons">
+            <button class="quit">Exit Quiz</button>
+            <button class="restart">Restart</button>
+        </div>
+    </div>
 
-        <!-- Rules/Info Start -->
-        <div class="start-info">
-            <div class="start-header"><h2>Rules & Info</h2></div>
-            <ul class="info-list">
-                <li class="info">1) You will have <span>1 minute 15 seconds</span> to answer 5 questions.</li>
-                <li class="info">2) Each correct answer will prompt the next question and add to your score.</li>
-                <li class="info">3) Each incorrect answer will prompt the next question and subtract time.</li>
-                <li class="info">4) Question topics range from HTML Syntax to Third-Party APIs. Anything goes!</li>
-                <li class="info">5) Enjoy!</li>
-            </ul>
-            <!-- Exit & Restart Buttons -->
-            <div class="end-buttons">
-                <button class="restart">Restart</button>
-                <button class="exit">Exit</button>
+    <!-- Quiz Container -->
+    <div class="quiz-cont">
+        <header>
+            <div class="title">Coding Quiz | (jrj-srs)</div>
+            <div class="timer">
+                <div class="time-text">Time:</div>
+                <div class="timer-countdown">20s</div>
             </div>
-        </div> 
-
-         <!-- Section for Question Boxes, children elements are divs for question answers -->
-        <section class="que-boxes">
-            <header>
-                <h1>Question 1</h1>
-            </header>
-                <div class="que-text">Which is not a valid data type in Javascript?
-                    <div class="option">undefined</div>
-                    <div class="option">boolean</div>
-                    <div class="option">float</div>
-                    <div class="option">number</div>
+        </header>
+        <section>
+            <div class="que-text">
+                <span>Which is not a valid data type in Javascript?</span>
+            </div>
+            <div class="option-list">
+                <div class="option">
+                    <span>undefined</span>
                 </div>
+                <div class="option">
+                    <span>boolean</span>
+                </div>
+                <div class="option">
+                    <span>float</span>
+                </div>
+                <div class="option">
+                    <span>number</span>
+                </div>
+            </div>
         </section>
 
+        <!-- Footer of Quiz Container -->
+        <footer>
+            <div class="que-left">
+                <span><p>2</p>of<p>5</p>Questions</span>
+            </div>
+            <button class="next-btn">Next Question</button>
+        </footer>
+    </div>
 
+    <!-- Finish Landing Page -->
+    <div class="result-land">
+        <div class="finished-text">The quiz is now finished!</div>
+        <div class="score-text">
+            <span>You answered <p>2</p> out of <p>5</p> correctly.</span>
+        </div>
+        <div class="buttons">
+            <button class="restart">Retry</button>
+            <button class="exit">Exit</button>
+        </div>
+    </div>
 
-
-
-
-
-
-
-
-        
-        
-        
-        <!-- Thanks for playing screen -->
-        <div class="goodbye"><span>Thanks for quizzing!</span></div>
-
-
-
-
-
-
-
-
-            
-    </main>
+    
     
     
 
 
-
-    
 </body>
 </html>
