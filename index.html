@@ -5,17 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css"/>
-    <script src="assets/js/script.js" defer></script>
     <!-- Favicon! -->
     <link href="assets/images/favicon.ico" rel="icon" type="image/x-icon"/>
     <title>Timed Coding Quiz | (jrj-sys)</title>
 </head>
 <body>
     <!-- Start button -->
-    <div class="start-btn-text">
-        <h1>Welcome, quizzer!</h1>
-        <div class="start-btn"><button>Press Here To Start</button></div>
-    </div>
+    <div class="start-btn"><button>Press Here To Start</button></div>
     
     <!-- Info Box -->
     <div class="info-box">
@@ -23,15 +19,15 @@
             <span>Rules & Info</span>
         </div>
         <div class="info-list">
-            <div class="info">→ You will have <span>20 seconds</span> per question ←</div>
-            <div class="info">→ Each correct answer will prompt the next question and add to your score ←</div>
-            <div class="info">→ Each incorrect answer will prompt the next question and subtract time ←</div>
-            <div class="info">→ Question topics range from HTML Syntax to Third-Party APIs ←</div></br>
-            <div class="info">  Goodluck!</div>
+            <div class="info">→  There are 5 questions.</div>
+            <div class="info">→ You will have <span>20 seconds</span> per question</div>
+            <div class="info">→ Each correct answer will prompt the next question and add to your score</div>
+            <div class="info">→ Each incorrect answer will prompt the next question and subtract time</div>
+            <div class="info">→ Question topics range from CSS Syntax to Third-Party APIs. </br></br> Goodluck!</div></br>
         </div>
         <div class="buttons">
             <button class="quit">Exit Quiz</button>
-            <button class="restart">Restart</button>
+            <button class="continue">Continue</button>
         </div>
     </div>
 
@@ -46,21 +42,10 @@
         </header>
         <section>
             <div class="que-text">
-                <span>Which is not a valid data type in Javascript?</span>
+                <!-- Question text will be pushed here from JS object-->
             </div>
             <div class="option-list">
-                <div class="option">
-                    <span>undefined</span>
-                </div>
-                <div class="option">
-                    <span>boolean</span>
-                </div>
-                <div class="option">
-                    <span>float</span>
-                </div>
-                <div class="option">
-                    <span>number</span>
-                </div>
+                <!-- Options will be pushed from JS object with question answers-->
             </div>
         </section>
 
@@ -89,6 +74,6 @@
     
     
 
-
+<script src="assets/js/script.js"></script>
 </body>
 </html>
