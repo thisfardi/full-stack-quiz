@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="assets/css/style.css"/>
     <!-- Favicon! -->
     <link href="assets/images/favicon.ico" rel="icon" type="image/x-icon"/>
+    <script src="assets/js/script.js" defer></script>
     <title>Timed Coding Quiz | (jrj-sys)</title>
 </head>
 <body>
@@ -20,7 +21,7 @@
         </div>
         <div class="info-list">
             <div class="info">→ There are 5 questions.</div>
-            <div class="info">→ You will have <span>60 seconds total</span></div>
+            <div class="info">→ You will have <span>60 seconds total. A wrong answer subtracts 10 seconds.</span></div>
             <div class="info">→ Each correct answer will prompt the next question and add to your score</div>
             <div class="info">→ Each incorrect answer will prompt the next question and subtract time</div>
             <div class="info">→ Question topics range from CSS Syntax to Third-Party APIs. </br></br> Goodluck!</div></br>
@@ -62,11 +63,10 @@
     <div class="result-land">
         <div class="finished-text">The quiz is now finished!</div>
         <div class="score-text">
-            <span class="score-result">Your score is: </span>
-            <input type=text" placeholder="Type your initials"></input>
+            <p class="score-result">Your score is: </p>
+            <input type="text" placeholder="Type your initials">
         </div>
         <div class="buttons">
-        </br>
             <button class="restart">Retry</button>
             <button class="exit">Exit</button>
         </div>
@@ -76,6 +76,6 @@
     
     
 
-<script src="assets/js/script.js"></script>
+
 </body>
 </html>

@@ -9,13 +9,14 @@ var countdown = quizForm.querySelector(".timer .timer-countdown");
 var questionCount = 0;
 var queNumStart = 1;
 var counter;
+var penalty = 10
 
 var result = document.querySelector(".result-land");
 var userScore = 0;
 
 
 
-
+var userInitials = prompt("Please input your initials");
 // Start button is clicked
 var startQuiz = function() {
     infoBox.classList.add("activeInfo");
@@ -30,7 +31,7 @@ var contQuiz = function() {
     quizForm.classList.add("activeQuiz")
     showQuestions(0);
     queCounter(1);
-    startTimer(60);
+    startTimer(countdown.textContent);
 }
 
 // Next button is clicked
@@ -55,6 +56,7 @@ var showResults = function() {
     var scoreText = document.querySelector(".result-land .score-text");
     var scoreNewText = '<span>Your score is: '+ userScore +'</span>'
     scoreText.innerHTML = scoreNewText
+    localStorage.setItem(userInitials, userScore);
 }
 
 // Press Exit in Results
@@ -110,6 +112,9 @@ function optionSelected(answer) {
         console.log(userScore);
         nextQuestion();
     } else {
+        countdown.innerHTML = countdown.textContent - penalty;
+        clearInterval(counter);
+        startTimer(countdown.textContent);
         nextQuestion();
     }
 }
