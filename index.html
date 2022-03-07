@@ -19,8 +19,8 @@
             <span>Rules & Info</span>
         </div>
         <div class="info-list">
-            <div class="info">→  There are 5 questions.</div>
-            <div class="info">→ You will have <span>20 seconds</span> per question</div>
+            <div class="info">→ There are 5 questions.</div>
+            <div class="info">→ You will have <span>60 seconds total</span></div>
             <div class="info">→ Each correct answer will prompt the next question and add to your score</div>
             <div class="info">→ Each incorrect answer will prompt the next question and subtract time</div>
             <div class="info">→ Question topics range from CSS Syntax to Third-Party APIs. </br></br> Goodluck!</div></br>
@@ -37,7 +37,7 @@
             <div class="title">Coding Quiz | (jrj-srs)</div>
             <div class="timer">
                 <div class="time-text">Time:</div>
-                <div class="timer-countdown">20s</div>
+                <div class="timer-countdown">60</div>
             </div>
         </header>
         <section>
@@ -52,7 +52,7 @@
         <!-- Footer of Quiz Container -->
         <footer>
             <div class="que-left">
-                <span><p>2</p>of<p>5</p>Questions</span>
+                <!-- Pushed from JS dynamically -->
             </div>
             <button class="next-btn">Next Question</button>
         </footer>
@@ -62,9 +62,11 @@
     <div class="result-land">
         <div class="finished-text">The quiz is now finished!</div>
         <div class="score-text">
-            <span>You answered <p>2</p> out of <p>5</p> correctly.</span>
+            <span class="score-result">Your score is: </span>
+            <input type=text" placeholder="Type your initials"></input>
         </div>
         <div class="buttons">
+        </br>
             <button class="restart">Retry</button>
             <button class="exit">Exit</button>
         </div>

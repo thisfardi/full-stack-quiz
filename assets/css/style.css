@@ -37,7 +37,7 @@ body {
     background-color: var(--primary-color);
     color: var(--text-color);
 }
-.info-box.activeInfo, .quiz-cont.activeQuiz {
+.info-box.activeInfo, .quiz-cont.activeQuiz, .result-land.activeResult {
     z-index: 5;
     opacity: 1;
     pointer-events: auto;
