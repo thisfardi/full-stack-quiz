@@ -1,6 +1,6 @@
 ## Full-Stack Development Quiz
 
-![Image here]()
+![Quiz image](https://github.com/jrj-sys/full-stack-quiz/blob/main/assets/images/Screen%20Shot%202022-03-06%20at%2011.00.40%20PM.png)
 
 ## Purpose: 
 

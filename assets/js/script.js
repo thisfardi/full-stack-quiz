@@ -126,11 +126,7 @@ function queCounter(index) {
 }
 
 
-
-
-
-
-
+// List of Quiz Questions in an Object
 var quizQuestions = [
     {
         num:  1,
